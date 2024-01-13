@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .contact{
+            border: 1px solid rgba(79, 114, 231, 0.868);
+            width: 700px;
+            height: 500px;
+            
+        }
+
+        .form_1{
+            border: 2px solid #ccc;
+            width: 670px;
+            margin: auto;
+            height: 280px;
+            padding-left: 20px;
+        }
+
+        .form_1::before{
+            position: absolute;
+            display: block;
+            content: "Your message: ";
+            background-color: transparent;
+            top: 79px;
+            background-color: #fff;
+        }
+
+        .form_1>span{
+           display: block;
+           margin-top: 10px;
+        }
+
+        .form_1 span span{
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        /* Form-2 */
+        .form_2{
+            border: 2px solid #ccc;
+            width: 670px;
+            margin: auto;
+            height: 80px;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .form_2>span{
+           display: block;
+           margin-top: 10px;
+        }
+
+        .form_2::before{
+            position: absolute;
+            display: block;
+            content: "How you found us: ";
+            top: 360px;
+            background-color: #fff;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <div class="form_1" >
+            <span>
+                <span>To</span>
+                <input type="text" placeholder="Example Cafe">
+            </span>
+            <span>
+                <span>Your email</span>
+                <input type="text">
+            </span>
+            <span style="display: flex; align-items: center;">
+                <span>Message</span>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </span>
+            <span>
+                <span>Attach File <input type="button" value="Choose File"> No file chosen</span>
+            </span>
+        </div>
+        <div class="form_2">
+            <span>
+                <span>How did you hear of us</span>
+                <select name="" id="" style="width: 150px;">
+                    <option value="Google">Google</option>
+                    <option value="Google">FaceBook</option>
+                </select>
+            </span>
+            <span>
+                <span style="margin-right: 60px;">Newsletter</span>
+                <span>
+                    <input type="checkbox" name="" id="">Ensure this box is checked if you would like to receive email updates
+                </span>
+            </span>
+        </div>
+        <div class="">
+            <input type="submit" value="Send message">
+        </div>
+    </div>
+    
+</body>
+</html>
